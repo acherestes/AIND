@@ -271,7 +271,7 @@ class MinimaxPlayer(IsolationPlayer):
         except SearchTimeout:
             return best_move
 
-        # Return the best move from the last completed search iteration
+        # Return the best move from the last completed search iteration.
         return best_move
 
     def min_play(self, game, depth):
