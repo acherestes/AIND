@@ -60,7 +60,7 @@ class AirCargoProblem(Problem):
             :return: list of Action objects
             """
             loads = []
-            # TODO create all load ground actions from the domain Load action
+            
             for cargo in self.cargos:
                 for plane in self.planes:
                     for airport in self.airports:
@@ -82,7 +82,7 @@ class AirCargoProblem(Problem):
             :return: list of Action objects
             """
             unloads = []
-            # TODO create all Unload ground actions from the domain Unload action
+            
             for cargo in self.cargos:
                 for plane in self.planes:
                     for airport in self.airports:
@@ -213,7 +213,7 @@ class AirCargoProblem(Problem):
         conditions by ignoring the preconditions required for an action to be
         executed. 
         """
-        # TODO implement (see Russell-Norvig Ed-3 10.2.3  or Russell-Norvig Ed-2 11.2)
+        
         count = 0
         for goal in self.goal:
             if goal in decode_state(node.state, self.state_map).neg:
