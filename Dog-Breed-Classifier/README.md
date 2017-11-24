@@ -7,11 +7,11 @@
 
 ## Project Overview
 
-Welcome to the Convolutional Neural Networks (CNN) project in the AI Nanodegree! In this project, you will learn how to build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images.  Given an image of a dog, your algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed.  
+Given an image of a dog, your algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed.  
 
 ![Sample Output][image1]
 
-Along with exploring state-of-the-art CNN models for classification, you will make important design decisions about the user experience for your app.  Our goal is that by completing this lab, you understand the challenges involved in piecing together a series of models designed to perform various tasks in a data processing pipeline.  Each model has its strengths and weaknesses, and engineering a real-world application often involves solving many problems without a perfect answer.  Your imperfect solution will nonetheless create a fun user experience!
+
 
 
 ## Project Instructions
@@ -56,7 +56,7 @@ Along with exploring state-of-the-art CNN models for classification, you will ma
 		jupyter notebook dog_app.ipynb
 	```
 
-__NOTE:__ While some code has already been implemented to get you started, you will need to implement additional functionality to successfully answer all of the questions included in the notebook. __Unless requested, do not modify code that has already been included.__
+
 
 
 ## Amazon Web Services
@@ -71,65 +71,6 @@ Instead of training your model on a local CPU (or GPU), you could use Amazon Web
 <a id='rubric'></a>
 ## Project Rubric
 
-#### Files Submitted
-
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
-| Submission Files      | The submission includes all required files.		|
-
-#### Documentation
-
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
-| Comments         		| The submission includes comments that describe the functionality of the code.  	|
-
-#### Step 1: Detect Humans
-
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
-| __Question 1:__ Assess the Human Face Detector |  The submission returns the percentage of the first 100 images in the dog and human face datasets with a detected human face.          |
-| __Question 2:__ Assess the Human Face Detector |  The submission opines whether Haar cascades for face detection are an appropriate technique for human detection.    |
-
-#### Step 2: Detect Dogs
-
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
-| __Question 3:__ Assess the Dog Detector |  The submission returns the percentage of the first 100 images in the dog and human face datasets with a detected dog.          |
-
-#### Step 3: Create a CNN to Classify Dog Breeds (from Scratch)
-
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
-| Model Architecture | The submission specifies a CNN architecture. |
-| Train the Model | The submission specifies the number of epochs used to train the algorithm. |
-| Test the Model | The trained model attains at least 1% accuracy on the test set. |
-
-
-#### Step 5: Create a CNN to Classify Dog Breeds (using Transfer Learning)
-
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
-| Obtain Bottleneck Features | The submission downloads the bottleneck features corresponding to one of the Keras pre-trained models (VGG-19, ResNet-50, Inception, or Xception). |
-| Model Architecture | The submission specifies a model architecture.  |
-| __Question 5__: Model Architecture | The submission details why the chosen architecture succeeded in the classification task and why earlier attempts were not as successful.  |
-| Compile the Model | The submission compiles the architecture by specifying the loss function and optimizer. |
-| Train the Model    | The submission uses model checkpointing to train the model and saves the model with the best validation loss. |
-| Load the Model with the Best Validation Loss    | The submission loads the model weights that attained the least validation loss. |
-| Test the Model    | Accuracy on the test set is 60% or greater. |
-| Predict Dog Breed with the Model | The submission includes a function that takes a file path to an image as input and returns the dog breed that is predicted by the CNN. |
-
-
-#### Step 6: Write your Algorithm
-
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
-| Write your Algorithm   | The submission uses the CNN from Step 5 to detect dog breed.  The submission has different output for each detected image type (dog, human, other) and provides either predicted actual (or resembling) dog breed. |
-
-#### Step 7: Test your Algorithm
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
-| Test Your Algorithm on Sample Images!   | The submission tests at least 6 images, including at least two human and two dog images. |
-| __Question 6__: Test Your Algorithm on Sample Images! | The submission discusses performance of the algorithm and discusses at least three possible points of improvement. |
 
 ## Suggestions to Make your Project Stand Out!
 
